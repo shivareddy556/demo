@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap page layout</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .two:hover {
+        border-radius: 12px;
+        background-color: red;
+    }
+
+    .two {
+        padding: 3px;
+    }
+
+    .col-4:hover {
+        transform: scale(1.1);
+        margin-bottom: 50px;
+    }
+
+    .fab {
+        font-size: 50px;
+    }
+
+    .number {
+        transform: rotate(-90deg);
+        position: fixed;
+        top: 50%;
+        right: -35px;
+    }
+
+    .cards {
+        position: relative;
+    }
+
+    .box1 {
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 35px;
+        margin-left: 7%;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .box1:hover {
+        background: #302b63;
+        background: -webkit-linear-gradient(to right, #CAC531, #F3F9A7);
+        background: linear-gradient(to right, #fdbb2d, #7303c0, #ec38bc, #f05053);
+        transform: scale(1.2);
+    }
+
+    .fa {
+        color: rgb(0, 132, 255);
+    }
+
+    .fa-star {
+        color: blueviolet;
+    }
+
+    .ang1 {
+        font-size: 50px;
+    }
+
+    .fa-globe {
+        font-size: 50px;
+    }
+
+    .fa-poll {
+        font-size: 50px;
+    }
+
+    .mobile1 {
+        font-size: 45px;
+        /* padding: 25px 25px 25px 25px;   */
+    }
+
+    .show1:hover {
+        transform: scale(1.2);
+    }
+
+    .mobileA1 {
+        font-size: 35px;
+        /* padding: 25px 25px 25px 25px;  */
+    }
+
+    .right {
+        font-size: 20px;
+        color: blueviolet;
+    }
+
+    .real {
+        font-size: 50px;
+        color: brown;
+        padding-left: 10px;
+    }
+
+    .time {
+        font-size: 50px;
+        color: rgb(42, 165, 104);
+    }
+
+    .real1:hover {
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .trend {
+        box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .trend:hover {
+        transform: scale(1.2);
+    }
+
+    .real1 {
+        margin: 30px;
+    }
+
+    .color1 {
+        background: #302b63;
+        background: -webkit-linear-gradient(to right, #b6fbff, #302b63);
+        background: linear-gradient(to right, #3C3B3F, #96c93d, #0575E6);
+    }
+
+    .color2 {
+        background: #302b63;
+        background: -webkit-linear-gradient(to right, #CAC531, #F3F9A7);
+        background: linear-gradient(to right, #00F260, #800080);
+    }
+
+    .color3 {
+        background: #302b63;
+        background: -webkit-linear-gradient(to right, #b6fbff, #302b63);
+        background: linear-gradient(to right, #800080, #f7b733, #6D6027, #800080);
+    }
+
+    .font {
+        font-size: 12px;
+        width: 15px;
+        margin-right: 125px;
+    }
+
+    .trainer {
+        box-shadow: 0 0 10px rgb(153, 164, 226);
+    }
+
+    .trainer:hover {
+        transform: scale(1.2);
+    }
+
+    .comfort {
+        background-image: url(./12490.jpg);
+    }
+
+    .control {
+        background-image: url(.//back-4.jpg);
+    }
+
+    .caller {
+        background-image: url(./back-6\ \(1\).jpg);
+    }
+
+    .margin {
+        margin-top: -50px;
+    }
+
+    .down {
+        margin-left: 450px;
+    }
+
+    .doller {
+        font-size: 45px;
+    }
+
+    .social-circle {
+        transition-duration: 0.8s;
+        -ms-transition-duration: 0.8s;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .social-circle:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+
+    .phone {
+        font-size: 45px;
+    }
+
+    .shiva {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .rrrr {
+        margin-left: 688px;
+    }
+
+    .naming:hover {
+        color: crimson;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-8"> <img src="./AIT-white.jpg" alt=""></div>
+            <div class="col-2 text-white naming"> corporate tarining</div>
+            <div class="col-2 text-white naming"> placement page</div>
+        </div>
+        <!-- <div class="container-fluid">
+          <div class="dropdown-item row">
+          <div class="dropdown dropdown-item">
+           <p class="fas fa-bars"class="fas fa-bars data-toggle=dropdown-item" data-toggle="dropdown"> </p>
+           <d   iv class="dropdown-menu course list">
+            <a class="dropdown-item" href="#">course list</a>
+            <a class="dropdown-item" href="#">course list</a>
+            <a class="dropdown-item" href="#">course list</a>
+            </div>
+           <a class="dropdown-item " href="#">ui developer</a>
+           <a class="dropdown-item " href="#">ui developer</a>
+           <a class="dropdown-item" href="#">ui developer</a>
+           <a class="dropdown-item" href="#">ui developer</a>
+           <a class="dropdown-item" href="#">ui developer</a>
+           <a class="dropdown-item" href="#">ui developer</a>
+         </div>  
+         </div>
+         </div> -->
+
+
+        <div class="container-fluid bg-white sticky-top">
+            <ul class="nav  py-3 px-2 mx-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggler tx" data-toggle="dropdown" href="#"><i
+                            class="far fa-bars"></i>Courses</a>
+                    <div class="dropdown-menu >
+                        <a class=" dropdown-item bg-warnng p-4 text-white"href="#">Courses lists</a>
+                        <a class="dropdown-item p-3 " href="# ">Front-end courses</a>
+                        <a class="dropdown-item p-3 " href="# ">Digital Marketing Courses</a>
+                    </div>
+                </li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">UI Development</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">Angular</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">React JS</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">VUE JS</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">MEAN</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">MERN</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">Digital Marketing</a>
+                </li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">PYTHON</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">ICONIC</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">React Native</a></li>
+                <li class="nav-item d-none d-md-block two "><a class="nav-link txt " href="# ">WEB DEV</a></li>
+            </ul>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="angular.jpg" alt="First slide">
+                    <div class="carousel-caption d-md-block ">
+                        <h3>ANGULAR DEVELOPMENT COURSE</h3>
+                        <input type="submit " class="btn btn-danger m-5 " value="explore course ">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="web_development.jpg" alt="Second slide">
+                    <div class="carousel-caption d-md-block ">
+                        <h3>WEB DEVELOPMENT COURSE</h3>
+                        <input type="submit " class="btn btn-danger m-5 " value="explore course ">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="react_training.jpg" alt="Third slide">
+                    <div class="carousel-caption d-md-block ">
+                        <h3>REACT DEVELOPMENT COURSE</h3>
+                        <input type="submit " class="btn btn-danger m-5 " value="explore course ">
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row p-2 margin ">
+            <div class="row col-md-3 box1 ">
+                <div>BECOME A <br> <b>UI DEVELOPER</b></div>
+                <div>Know More</div>
+
+            </div>
+            <div class="row col-md-3 box1 ">
+
+                <div>BECOME A<br> <b> ANGULAR DEVELOPER</b> </div>
+                <div>Know More </div>
+
+            </div>
+            <div class="row col-md-3 box1 ">
+                <div>BECOME A <br> <b>REACTJS DEVELOPER</b></div>
+                <div>Know More</div>
+            </div>
+        </div>
+        <h2 class="ml-5 ">TRENDING COURSE</h2>
+        <div class="container p-4 ">
+            <div class="row ">
+                <div class="col-md-3 pb-2 ">
+                    <div class="row m-1 p-2 color1 ">
+                        <div class="col-3 "><i class=" fab fa-angular "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="pt-1 ">ANGULAR Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color1 ">
+                        <div class="col-3 p-4 "><i class="fab fa-react "></i></div>
+                        <div class="col-9 ">
+                            <h5 class=" pt-2 pl-3 ">REACT Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3>REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color1 ">
+                        <div class="col-3 p-4 "><i class="fas fa-shield-alt ang1 "></i></div>
+                        <div class="col-9 ">
+                            <h5 class=" pt-2 pl-3 ">MEAN Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color1 ">
+                        <div class="col-3 p-4 "><i class="fas fa-fire ang1 "></i></div>
+                        <div class="col-9 ">
+                            <h5 class=" pt-2 pl-3 ">MERN Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container p-4 ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <div class="row m-1 color2 ">
+                        <div class="col-3 p-4 "><i class="fas fa-globe "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="m-3 pt-2 pl-2 ">WEB Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color2 ">
+                        <div class="col-3 p-4 "><i class="fas fa-poll "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="m-3 pt-2 pl-4 ">DIGITL MARKETING COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color2 ">
+                        <div class="col-3 p-4 "><i class="fab fa-react "></i></div>
+                        <div class="col-9 ">
+                            <h6 class="m-3 pt-2 pl-3 ">REACT NATIVE Development COURSE</h6>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color2 ">
+                        <div class="col-3 p-4 "><i class="fab fa-bity "></i></div>
+                        <div class="col-9 ">
+                            <h6 class="m-3 p-2 p-3 ">IONIC Development COURSE</h6>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h2 class="ml-5 ">RECENT ADDITION</h2>
+        <div class="container p-4 ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <div class="row m-1 color3 ">
+                        <div class="col-3 p-4 "><i class="fas fa-file-code doller "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="m-3 pl-2 pr-2 ">UI Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color3 ">
+                        <div class="col-3 p-4 "><i class="fab fa-vuejs "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="m-3 pl-2 pr-2 ">VUEJS MARKETING COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color3 ">
+                        <div class="col-3 p-4 "><i class="fab fa-wordpress-simple "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="m-2.6 pt-4 pr-3 pl-2 ">WORD PRESS Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row m-1 color3 ">
+                        <div class="col-3 p-4 "><i class="fab fa-python "></i></div>
+                        <div class="col-9 ">
+                            <h5 class="m-3 pr-2 pl-2 ">PYTHON Development COURSE</h5>
+                        </div>
+                    </div>
+                    <div class=" box shadow p-3 m-1 ">
+                        <p>Aangular is papular for making dinamic application and its information official and reliance
+                            infucion includes altogether lessen the measure of...</p>
+                        <hr>
+                        <h3> REVIEWS</h3>
+                        <div class="rev ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i> 5.0(257)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h3 class="ml-5 ">Discover Top Categories</h2>
+
+            <div class=" container p-4 ">
+                <div class="row col-md-12 ">
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "><i class="fab fa-dev mobile1 text-danger "></i>
+                                <h5 class="font ">Devops</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-laptop-code mobile1 text-info "></i>
+                                <h5 class="font ">FrontEnd</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-mobile-alt mobile1 mr-2 text-warning "></i>
+                                <h5 class="font ">MobileappDev</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-3 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-funnel-dollar mobile1 mr-2 text-primary "></i>
+                                <h5 class="font px-2 ">Degital Marketing</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-3 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-file-code mobile1 text-success mr-2 "></i>
+                                <h5 class="font ">program& framework</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-database mobile1 text-secondary mr-2 "></i>
+                                <h5 class="font ">Datatype</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" container p-4 ">
+                <div class="row col-md-12 ">
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 b "><i
+                                    class="fas fa-chalkboard-teacher text-info mobileA1 text-warning "></i>
+                                <h5 class="font ">Devops</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class="box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "> <i class="fab fa-jsfiddle mobileA1 text-danger text-danger "></i>
+                                <h5 class="font ">FrontEnd</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-mask mobileA1 text-blue "></i>
+                                <h5 class="font mr-3 ">MobileappDev</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-3 m-2 ">
+                            <div class="col-2 "> <i class="fas fa-mobile-alt mobileA1 text-success "></i>
+                                <h5 class="font mr-3 ">Degital Marketing</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-3 m-2 ">
+                            <div class="col-2 "> <i class="fab fa-python mobileA1 text-primary "></i>
+                                <div class="font m-2 ">program& framework</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class=" box shadow show1 p-4 m-2 ">
+                            <div class="col-2 "> <i class="fab fa-codepen mobileA1 text-danger "></i>
+                                <h5 class="font m-2 ">Datatype</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="ml-5 ">REVIEWS</h3>
+            <div id="demo1 " class="carousel slide " data-ride="carousel ">
+                <ul class="carousel-indicators ">
+                    <li data-target="#demo1 " data-slide-to="0 " class="active "></li>
+                    <li data-target="#demo1 " data-slide-to="1 "></li>
+                </ul>
+                <div class="container ">
+                    <div id="carouselExampleIndicators2 " class="carousel slide " data-ride="carousel "></div>
+                    <div class="carousel-item active ">
+                        <div class="row col-md-12 ">
+                            <div class="col-md-4 ">
+                                <div class=" box shadow m-2 ">
+                                    <div class="row m-1 color2 ">
+                                        <div class="col-3 p-4 ">
+                                            <h2 class="shiva ">A</h2>
+                                        </div>
+                                        <div class="col-9 ">
+                                            <h6 class="m-3 p-2 p-3 ">LIJARANI SWAIN</h6>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                    </div>
+                                    <div class="p-4 ">
+                                        <p>Aangular is papular for making dinamic application and its information
+                                            official and reliance infucion includes altogether lessen the measure of...
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="box shadow m-2 ">
+                                    <div class="row m-1 color2 ">
+                                        <div class="col-3 p-4 ">
+                                            <h2 class="shiva ">L</h2>
+                                        </div>
+                                        <div class="col-9 ">
+                                            <h6 class="m-3 p-2 p-3 ">ASHISH SEKHAR</h6>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                    </div>
+                                    <div class="p-4 ">
+                                        <p>Aangular is papular for making dinamic application and its information
+                                            official and reliance infucion includes altogether lessen the measure of...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class=" box shadow m-2 ">
+                                    <div class="row m-1 color2 ">
+                                        <div class="col-3 p-4 ">
+                                            <h2 class="shiva ">K</h2>
+                                        </div>
+                                        <div class="col-9 ">
+                                            <h6 class="m-3 p-2 p-3 ">DWARAK REDDY</h6>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                    </div>
+                                    <div class="p-4 ">
+                                        <p>Aangular is papular for making dinamic application and its information
+                                            official and reliance infucion includes altogether lessen the measure of...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container carousel-item ">
+                        <div class="row col-md-12 ">
+                            <div class="col-md-4 ">
+                                <div class=" box shadow m-2 ">
+                                    <div class="row m-1 color2 ">
+                                        <div class="col-3 p-4 ">
+                                            <h2 class="shiva ">M</h2>
+                                        </div>
+                                        <div class="col-9 ">
+                                            <h6 class="m-3 p-2 p-3 ">DWARAK REDDY</h6>
+                                        </div>
+                                    </div>
+                                    <div class="rev p-2 ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                    </div>
+                                    <div class="p-4 ">
+                                        <p>Aangular is papular for making dinamic application and its information
+                                            official and reliance infucion includes altogether lessen the measure of...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class=" box shadow m-2 ">
+                                    <div class="row m-1 color2 ">
+                                        <div class="col-3 p-4 ">
+                                            <h2 class="shiva ">D</h2>
+                                        </div>
+                                        <div class="col-9 ">
+                                            <h6 class="m-3 p-2 p-3 ">LAKSHMIBHASKARREDDY</h6>
+                                        </div>
+                                    </div>
+                                    <div class="rev p-2 ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                    </div>
+                                    <div class="p-4 ">
+                                        <p>Aangular is papular for making dinamic application and its information
+                                            official and reliance infucion includes altogether lessen the measure of...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class=" box shadow m-2 ">
+                                    <div class="row m-1 color2 ">
+                                        <div class="col-3 p-4 ">
+                                            <h2 class="shiva ">L</h2>
+                                        </div>
+                                        <div class="col-9 ">
+                                            <h6 class="m-3 p-2 p-3 ">KIRAN CSN</h6>
+                                        </div>
+                                    </div>
+                                    <div class="rev p-2 ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                    </div>
+                                    <div class="p-4 ">
+                                        <p>Aangular is papular for making dinamic application and its information
+                                            official and reliance infucion includes altogether lessen the measure of...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev " href="#demo1 " data-slide="prev ">
+                    <span class="carousel-control-prev-icon "></span>
+                </a>
+                <a class="carousel-control-next " href="#demo1 " data-slide="next ">
+                    <span class="carousel-control-next-icon "></span>
+                </a>
+            </div>
+            <br> <br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3 class="text-primary text-center "> view All views></h3>
+
+
+
+            <div data-toggle="collapse " data-target="#hg " class="bg-primary ">
+                <h3 class="text-center ">Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals with
+                    Acheivers IT</h3>
+                <button type="button " class="rrrr ">CONTACT</button>
+            </div>
+            <div id="hg " class="collapse ">
+                <form action="/action_page.php ">
+                    <div class="form-group ">
+                        <label for="email ">Email:</label>
+                        <input type="email " class="form-control " id="email " placeholder="Enter email " name="email ">
+                    </div>
+                    <div class="form-group ">
+                        <label for="pwd ">Password:</label>
+                        <input type="password " class="form-control " id="pwd " placeholder="Enter password "
+                            name="pwd ">
+                    </div>
+                    <div class="checkbox ">
+                        <label><input type="checkbox " name="remember "> Remember me</label>
+                    </div>
+                    <button type="submit " class="btn btn-default ">Submit</button>
+                </form>
+            </div>
+            <h4 class="m-5 ">Acheivers IT Edge</h4>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-2 real1 ">
+                        <div><i class="fas fa-check-circle right "></i></div>
+                        <div><b>Real Time Doubt Resolution</b></div>
+                        <div>With Live Instructors</div>
+                    </div>
+                    <div class="col-md-2 real1 ">
+                        <div><i class="fas fa-infinity real "></i></div>
+                        <b>Real Time Doubt Resolution</b>
+                        <div>With Live Instructors</div>
+                    </div>
+                    <div class="col-md-2 real1 mt-4 pb-4 ">
+                        <div><i class="time ">24/7</i></div>
+                        <b>Real Time Doubt Resolution</b>
+                        <div>With Live Instructors</div>
+                    </div>
+                    <div class="col-md-2 real1 ">
+                        <div><i class="fas fa-infinity real "></i></div>
+                        <b>Real Time Doubt Resolution</b>
+                        <div>With Live Instructors</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid p-4 comfort ">
+                <div class="col-md-12 we-top pad-30 text-center text-blue mTB-30 ">
+                    <h1 class="font-bold font-xs-25 course-titles ">Why We are on TOP 1</h1>
+                    <h6 class="p-4 ">More people train with AcheiversIT because of ourcommitment to quality, Placement
+                        Support, and Real-time Training.</h6>
+                </div>
+                <div class=" container ">
+                    <div class="row col-md-12 ">
+                        <div class="col-md-3 ">
+                            <div class=" trend card m-2 p-5 ">
+                                <div>
+                                    <h2>13925+</h2><br>
+                                    <h6>courece</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class=" trend card m-2 p-4 pb-4 ">
+                                <div>
+                                    <h2>100+</h2><br>
+                                    <h6 class="font3 "> Companies are tied-UP to hire<br> our trained students</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class=" trend card m-2 p-3 ">
+                                <div>
+                                    <h1>50+</h2><br>
+                                        <h6 class="font3 ">attend Interviews every day <br>through our Placement Cell
+                                        </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class=" trend card m-2 p-4 ">
+                                <div>
+                                    <h2>5+</h2><br>
+                                    <h6 class="font3 ">our students Get Jobs every day<br> in Bangalore and Chennai</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class=" ml-5 ">our trainers form</h2>
+            <div class="container p-3 ">
+                <div class="row ">
+                    <div class="col-md-3 ">
+                        <div class=" trainer m-3 p-4 p-2 ">
+                            <div class="control ">
+                                <img src="./cognizant.jpg.png " alt=" image " width="70pc height=" 50px "><b>cognizant</b></div>
+        </div>
+    </div>
+    <div class=" col-md-3 ">
+        <div class=" trainer m-3 pr-5 pl-4 pt-2 pb-2 ">
+            <div class=" control "><img src=" ./HCL.JPG " alt=" image " width=" 120pc " height=" 100px "></div>
+        </div>
+    </div>
+    <div class=" col-md-3 ">
+        <div class=" trainer m-3 pr-5 pl-5 pt-2 pb-2 ">
+            <img src=" ./infosoys.jpg " alt=" image " width=" 120pc " height=" 100px ">
+        </div>
+    </div>
+    <div class=" col-md-3 ">
+        <div class=" trainer m-3 pr-5 pl-5 pt-2 pb-2 ">
+            <img src=" ./accenture.jpg " alt=" image " width=" 130pc " height=" 100px ">
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class=" container p-3 ">
+        <div class=" row ">
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 p-4 p-2 ">
+                    <img src=" ./oracle.jpg " alt=" image " width=" 160pc " height=" 70px ">
+                </div>
+            </div>
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-4 pt-4 pb-4 ">
+                    <img src=" ./IBM.jpg " alt=" image " width=" 140pc " height=" 70px ">
+                </div>
+            </div>
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-5 pt-4 pb-4 ">
+                    <img src=" ./amezon.jpg " alt=" image " width=" 122pc " height=" 70px ">
+                </div>
+            </div>
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-4 pt-2 pb-2 ">
+                    <img src=" ./visa.jpg " alt=" image " width=" 150pc " height=" 100px ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" container p-4 ">
+        <div class=" row ">
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-4 pt-2 pb-2 ">
+                    <img src=" ./wipro.jpg " alt=" image " width=" 140pc " height=" 100px ">
+                </div>
+            </div>
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-4 pt-2 pb-2 ">
+                    <img src=" ./flip cart.jpg " alt=" image " width=" 140pc " height=" 100px ">
+                </div>
+            </div>
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-4 pt-2 pb-2 ">
+                    <img src=" ./DELL.jpg " alt=" image " width=" 150pc " height=" 100px ">
+                </div>
+            </div>
+            <div class=" col-md-3 ">
+                <div class=" trainer m-4 pr-5 pl-4 pt-2 pb-2 ">
+                    <img src=" ./GENPACT.JPG " alt=" image " width=" 140pc " height=" 100px ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class=" ml-5 ">latest job Openings</h2>
+    <!-- <div class=" p-5 mr-3 "> -->
+        <div class=" container-fluid ">
+            <div class=" row col-md-12 m-3 ">
+                <div class=" col-md-5 caller m-4 p-3 text-white card ">
+                    <h5>Front End Developer - Angular js Latest J,Nodejs</h5>
+                    Location : Bangalore
+         <!-- <div class=" fas fa-angle-double-down "data-toggle=" collapse " data-target=" #sir1 "> -->
+                                <!-- <i class=" fas fa-angle-double-down "></i> -->
+                            <!-- </div> -->
+                            <!-- <div id=" sir1 " class=" collapse in"> -->
+                                <div class="fas fa-angle-double-down" data-toggle="collapse" data-target="#subbu">
+                                </div>
+                                <div id="subbu" class="collapse in">
+                                    <ul class=" bg-white text-dark ">
+                                        <li>Roles and Responsibilities :</li>
+                                        <li>A front-end web developer is responsible for implementing visual elements
+                                            that
+                                            users see and interact with in a web application. have to supported by
+                                            back-end
+                                            web developers, who are responsible for server-side application
+                                            logic and integration of the work front-end developer... Desired Candidate
+                                            Profile :</li>
+                                        <li>Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular
+                                            and
+                                            1+ years of exp on NodeJS Experience : 4 to 10 years.</li>
+                                        <li> Skill set : HTML,CSS,JAvascript,Angular, Nodejs. Notice Period: 15 days to
+                                            30
+                                            days</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class=" col-md-5 caller m-4 p-3 text-white card ">
+                                <h5>UI Developer - AngularJS Frameworkse</h5>
+                                Location : Bangalor
+                                <div class=" fas fa-angle-double-down " data-toggle=" collapse " data-target="#rama ">
+                                </div>
+                                <div id="rama" class=" collapse in">
+                                    <ul class=" bg-white text-dark ">
+                                        <li>Roles and Responsibilities :</li>
+                                        <li>A front-end web developer is responsible for implementing visual elements
+                                            that
+                                            users see and interact with in a web application. have to supported by
+                                            back-end
+                                            web developers, who are responsible for server-side application
+                                            logic and integration of the work front-end developer... Desired Candidate
+                                            Profile :</li>
+                                        <li>Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular
+                                            and
+                                            1+ years of exp on NodeJS Experience : 4 to 10 years.</li>
+                                        <li> Skill set : HTML,CSS,JAvascript,Angular, Nodejs. Notice Period: 15 days to
+                                            30
+                                            days</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <div class=" container-fluid ">
+                            <div class=" row col-md-12 m-3 ">
+                                <div class=" col-md-5 caller m-4 p-3 text-white card ">
+                                    <h5>UI Developer - AngularJS Frameworks</h5>
+                                    Location : Bangalore
+                                    <div data-toggle=" collapse " data-target=" #sir3 " class=" down "> <i
+                                            class=" fas fa-angle-double-down "></i>
+                                    </div>
+                                    <div id=" sir3 " class=" collapse down ">
+                                        <ul class=" bg-white text-dark ">
+                                            <li>Roles and Responsibilities :</li>
+                                            <li>A front-end web developer is responsible for implementing visual
+                                                elements
+                                                that users see and interact with in a web application. have to supported
+                                                by
+                                                back-end web developers, who are responsible for server-side application
+                                                logic
+                                                and integration of the work front-end developer... Desired Candidate
+                                                Profile
+                                                :</li>
+                                            <li>Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on
+                                                Angular
+                                                and 1+ years of exp on NodeJS Experience : 4 to 10 years.</li>
+                                            <li> Skill set : HTML,CSS,JAvascript,Angular, Nodejs. Notice Period: 15 days
+                                                to
+                                                30 days</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class=" col-md-5 caller m-4 p-3 text-white card ">
+                                    <h5>Python Developer ( Fresher ) Requirement.</h5>
+                                    Location : Bangalore
+                                    <div data-toggle=" collapse " data-target=" #sir4 " class=" down "> <i
+                                            class=" fas fa-angle-double-down "></i>
+                                    </div>
+                                    <div id=" sir4 " class=" collapse down">
+                                        <ul class=" bg-white text-dark ">
+                                            <li>Roles and Responsibilities :</li>
+                                            <li>A front-end web developer is responsible for implementing visual
+                                                elements
+                                                that
+                                                users see and interact with in a web application. have to supported by
+                                                back-end
+                                                web developers, who are responsible for server-side application logic
+                                                and integration of the work front-end developer... Desired Candidate
+                                                Profile
+                                                :
+                                            </li>
+                                            <li>Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on
+                                                Angular
+                                                and
+                                                1+ years of exp on NodeJS Experience : 4 to 10 years.</li>
+                                            <li> Skill set : HTML,CSS,JAvascript,Angular, Nodejs. Notice Period: 15 days
+                                                to
+                                                30
+                                                days</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" container-fluid ">
+                            <div class=" row col-md-12 m-3 ">
+                                <div class=" col-md-5 caller m-2 p-3 m-4 text-white card ">
+                                    <h5>UI UX Designer / Developer</h5>
+                                    Location : Bangalor
+                                    <div data-toggle=" collapse " data-target=" #sir5 " class=" down "> <i
+                                            class=" fas fa-angle-double-down "></i>
+                                    </div>
+                                    <div id=" sir5 " class=" collapse ">
+                                        <ul class=" bg-white text-dark ">
+                                            <li>Roles and Responsibilities :</li>
+                                            <li>A front-end web developer is responsible for implementing visual
+                                                elements
+                                                that
+                                                users see and interact with in a web application. have to supported by
+                                                back-end
+                                                web developers, who are responsible for server-side application logic
+                                                and integration of the work front-end developer... Desired Candidate
+                                                Profile
+                                                :
+                                            </li>
+                                            <li>Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on
+                                                Angular
+                                                and
+                                                1+ years of exp on NodeJS Experience : 4 to 10 years.</li>
+                                            <li> Skill set : HTML,CSS,JAvascript,Angular, Nodejs. Notice Period: 15 days
+                                                to
+                                                30
+                                                days</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class=" col-md-5 caller m-2 p-3 m-4 text-white card ">
+                                    <h5>.Net senior Developer- 5positions</h5>
+                                    Location : Bangalore
+                                    <div data-toggle=" collapse " data-target=" #sir6 " class=" down "> <i
+                                            class=" fas fa-angle-double-down "></i>
+                                    </div>
+                                    <div id=" sir6 " class=" collapse ">
+                                        <ul class=" bg-white text-dark ">
+                                            <li>Roles and Responsibilities :</li>
+                                            <li>A front-end web developer is responsible for implementing visual
+                                                elements
+                                                that
+                                                users see and interact with in a web application. have to supported by
+                                                back-end
+                                                web developers, who are responsible for server-side application logic
+                                                and integration of the work front-end developer... Desired Candidate
+                                                Profile
+                                                :
+                                            </li>
+                                            <li>Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on
+                                                Angular
+                                                and
+                                                1+ years of exp on NodeJS Experience : 4 to 10 years.</li>
+                                            <li> Skill set : HTML,CSS,JAvascript,Angular, Nodejs. Notice Period: 15 days
+                                                to
+                                                30
+                                                days</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <h2 class=" ml-5 ">Our Corporate Clints</h2>
+                <div class=" container p-4 ">
+                    <div class=" row ">
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./HCL.JPG " alt=" image " width=" 160pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./cognizant.jpg.png " alt=" image " width=" 170pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./infosoys.jpg " alt=" image " width=" 150pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./accenture.jpg " alt=" image " width=" 160pc " height=" 100px ">
+                        </div>
+
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./oracle.jpg " alt=" image " width=" 150pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./IBM.jpg " alt=" image " width=" 160pc " height=" 100px ">
+                        </div>
+                    </div>
+                </div>
+                <div class=" container p-5 ">
+                    <div class=" row ">
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./wipro.jpg " alt=" image " width=" 160pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./amezon.jpg " alt=" image " width=" 170pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./flip cart.jpg " alt=" image " width=" 150pc " height=" 100px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./visa.jpg " alt=" image " width=" 160pc " height=" 100px ">
+                        </div>
+
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./cisco.jpg " alt=" image " width=" 110pc " height=" 80px ">
+                        </div>
+                        <div class=" col-md-2 trainer1 ">
+                            <img src=" ./DELL.jpg " alt=" image " width=" 160pc " height=" 100px ">
+                        </div>
+                    </div>
+                </div>
+                <div class=" container-fluid bg-dark py-3 pl-5 pr-5 ">
+
+                    <div class=" row ">
+                        <div class=" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 text-secondary ">
+                            <img src=" ./AIT-white.jpg " alt=" ait " width=" 280px " height=" 84px ">
+                            <br><br>
+                            <p>AchieversIT - provides a wide group of opportunities for freshers and Experienced
+                                candidate
+                                who can
+                                develop their skills and build their career opportunities across multiple Companies.</p>
+                        </div>
+                        <div class=" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 text-secondary py-4 px-4 ">
+
+                            <h4>COMPANY</h4>
+                            <ul>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">Home</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">Placements</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">Corporate Training</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 text-secondary py-4 px-4 ">
+
+
+                            <h4 class=" p-1 ">TRENDING COURSES</h4>
+                            <ul>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" text-white list ">UI Development Course</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">Angular JS Course</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">React JS Course</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">Digital Marketing Course</a>
+                                </li>
+                                <li class=" col-lg-12 ">
+                                    <a href=" # " class=" list text-white ">Python Course</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 text-secondary py-4 px-4 ">
+
+
+                            <h4 class=" p-1 ">CONTACT INFO</h4>
+                            <ul>
+                                <p class=" col-lg-6 ">
+                                <h6 class=" col-md-12 "><i class=" fa fa-map " aria-hidden=" true "></i>
+                                    <p class=" text-white ">#272, 6th Main, Next to Preksha<br> Montessori , 1st Floor,
+                                        BTM
+                                        2nd
+                                        Stage,<br> Bangalore, India - 560076</p>
+                                </h6>
+
+                                </p>
+                                <p class=" col-lg-6 ">
+                                <h6 class=" col-md-12 "><i class=" fas fa-phone-volume "></i>
+                                    <p class=" text-white ">India : +91 8431-040-457</p>
+                                </h6>
+                                </p>
+                                <p class=" col-lg-6 ">
+                                <h6 class=" col-md-12 "><i class=" fa fa-envelope-open " aria-hidden=" true "></i>
+                                    <p class=" text-white ">info@achieversit.com</p>
+                                </h6>
+                                </p>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <hr class=" bg-white ">
+                    <div class=" container ">
+
+                        <div class=" col-md-12 ">
+
+                            <div class=" row justify-content-center ">
+
+                                <div>
+                                    <p class=" fab fa-facebook color m-2 text-white social-circle "></p>
+
+                                </div>
+
+                                <div>
+                                    <p class=" fab fa-linkedin-in text-white m-2 social-circle "></p>
+                                </div>
+                                <div>
+                                    <p> <i class=" fab fa-twitter text-white m-1 social-circle "></i></p>
+                                </div>
+
+                                <div>
+                                    <p class=" fab fa-pinterest m-2 text-white social-circle "></p>
+                                </div>
+                                <div>
+                                    <p class=" fab fa-youtube text-white m-2 text-white social-circle "></p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" contanier-fluid ">
+                        <div class=" col-md-12 text-white p-3 m-2 ">
+                            <div class=" row ">
+                                <p class=" m-2 ml-5 ">Copyright © 2020 AchieversIT. All Rights Reserved </p>
+                                <p class=" m-2 ml-5 ">Privacy Policy</p>
+                                <p class=" m-2 ml-5 ">Terms of use</p>
+                                <p class=" m-2 ml-5 ">Refund Policy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-12 text-white p-3 m-2 ">
+                        <div class=" row ">
+                            <p class=" col-md-3 text-success ml-5 "><i class=" fab fa-whatsapp "></i></p>
+                            <p class=" col-md-3 text-info ml-5 "><i class=" fas fa-phone-volume phone "></i>Call us
+                                on:+91
+                                9876-543-210</p>
+                            <p class=" col-md-3 text-danger ml-5 "><i class=" far fa-envelope phone "></i>Request A Call
+                                Back</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- <div data-toggle=" collapse " data-target=" #house " class=" bg-primary ">
+        <button type=" button " class=" btn-primary number p-2 ">CONTACT US</button>
+    </div>
+    <div id=" house" class="collapse"> -->
+    <button type="button" class="btn btn-info number" data-toggle="collapse" data-target=" #house ">CONTACT US</button>
+    <div id="house" class="collapse in">
+        <form action=" /action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
